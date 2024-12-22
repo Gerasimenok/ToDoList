@@ -1,0 +1,214 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.add-task-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  width: 100%;
+}
+
+.task-input {
+  display: flex;
+  width: 100%;
+}
+
+.task-input input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.task-input button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+.add-description {
+  margin-top: 10px;
+}
+
+.add-description textarea {
+  width: 105%;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.todo-list {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 4px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.todo-list {
+  scrollbar-width: thin;
+  scrollbar-color: #000 #f0f0f0;
+}
+
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.todo-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.todo-content b,
+.todo-content p {
+  margin: 0;
+  text-align: left;
+}
+
+.todo-content p {
+  margin-top: 5px;
+  color: black;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+button {
+  margin-left: 10px;
+}
+.task-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container input {
+  flex: 1;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stats span {
+  font-size: 16px;
+  color: #333;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-left: 20px;
+}
+
+.generate-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.generate-button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.severity-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
